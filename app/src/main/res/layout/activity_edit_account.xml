@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/appbg"
+    tools:context="smg.xelas.EditAccount">
+
+    <ProgressBar
+        android:id="@+id/pb_loading_indicator"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:elevation="7dp"
+        android:visibility="invisible" />
+
+    <!-- SIGN UP FORM -->
+
+    <!-- HEADING -->
+    <TextView
+        android:id="@+id/textView"
+        style="@style/H1"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:text="My Profile" />
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textView"
+        android:fillViewport="true"
+        android:orientation="vertical"
+        android:scrollbarStyle="insideOverlay">
+
+        <RelativeLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:nestedScrollingEnabled="false"
+            android:orientation="vertical">
+
+
+            <!-- FIRST NAME -->
+            <EditText
+                android:id="@+id/eaFirstName"
+                style="@style/EditTextStyle"
+                android:layout_alignParentTop="false"
+                android:layout_marginBottom="10dp"
+                android:drawableStart="@drawable/user"
+                android:drawablePadding="20dip"
+                android:inputType="text"
+                android:hint="First Name"
+                android:paddingLeft="5dp" />
+
+            <!-- LAST NAME -->
+            <EditText
+                android:id="@+id/eaLastName"
+                style="@style/EditTextStyle"
+                android:layout_below="@+id/eaFirstName"
+                android:layout_marginBottom="10dp"
+                android:drawableStart="@drawable/user"
+                android:drawablePadding="20dip"
+                android:inputType="text"
+                android:hint="Last Name"
+                android:paddingLeft="5dp" />
+
+            <!-- HEIGHT -->
+            <EditText
+                android:id="@+id/eaHeight"
+                style="@style/EditTextStyle"
+                android:layout_below="@+id/eaLastName"
+                android:layout_marginBottom="10dp"
+                android:drawableStart="@drawable/user"
+                android:drawablePadding="20dip"
+                android:hint="Height"
+                android:inputType="number"
+                android:paddingLeft="5dp" />
+
+            <!-- WEIGHT -->
+            <EditText
+                android:id="@+id/eaWeight"
+                style="@style/EditTextStyle"
+                android:layout_below="@+id/eaHeight"
+                android:layout_marginBottom="10dp"
+                android:drawableStart="@drawable/user"
+                android:drawablePadding="20dip"
+                android:inputType="number"
+                android:hint="Weight"
+                android:paddingLeft="5dp" />
+
+            <!-- PROFESSION TODO Style the Spinner-->
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/eaProfession"
+                style="@style/SpinnerStyle"
+                android:layout_below="@+id/eaWeight"
+                android:layout_marginBottom="10dp"
+                android:entries="@array/jobs"
+                android:spinnerMode="dialog"/>
+
+            <!-- PROFESSION TODO Style the Spinner-->
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/eaWorkout"
+                style="@style/SpinnerStyle"
+                android:layout_below="@+id/eaProfession"
+                android:layout_marginBottom="10dp"
+                android:entries="@array/workoutStrings"
+                android:spinnerMode="dialog"
+                 />
+
+
+            <Button
+                android:id="@+id/btnUpdateDetails"
+                style="@style/ButtonStyle"
+                android:layout_height="30dp"
+                android:layout_below="@+id/eaWorkout"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#545454"
+                android:text="UPDATE" />
+
+            <EditText
+                android:id="@+id/eaCurrentPassword"
+                style="@style/EditTextStyle"
+                android:layout_below="@+id/btnUpdateDetails"
+                android:layout_marginBottom="10dp"
+                android:drawableStart="@drawable/lock"
+                android:drawablePadding="20dip"
+                android:hint="CURRENT PASSWORD"
+                android:inputType="textPassword"
+                android:paddingLeft="5dp" />
+            <!-- PASSWORD -->
+            <EditText
+                android:id="@+id/eaPassword"
+                style="@style/EditTextStyle"
+                android:layout_below="@+id/eaCurrentPassword"
+                android:layout_marginBottom="10dp"
+                android:drawableStart="@drawable/lock"
+                android:drawablePadding="20dip"
+                android:hint="NEW PASSWORD"
+                android:inputType="textPassword"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"/>
+            <!--Password Confirm-->
+            <EditText
+                android:id="@+id/eaPasswordConfirm"
+                style="@style/EditTextStyle"
+                android:layout_below="@+id/eaPassword"
+                android:layout_marginBottom="10dp"
+                android:drawableStart="@drawable/lock"
+                android:drawablePadding="20dip"
+                android:hint="REPEAT PASSWORD"
+                android:inputType="textPassword"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"/>
+
+            <!-- Update Password button -->
+            <Button
+                android:id="@+id/btnUpdatePassword"
+                style="@style/ButtonStyle"
+                android:layout_height="30dp"
+                android:layout_below="@+id/eaPasswordConfirm"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#545454"
+                android:text="UPDATE PASSWORD" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

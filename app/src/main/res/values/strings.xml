@@ -1,0 +1,145 @@
+<resources>
+    <string name="app_name">Xelas</string>
+    <string name="title_activity_forgot_password">Forgot Password</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_sign_up">SignUpActivity</string>
+
+    <string-array name="gender_array">
+        <item>GENDER</item>
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string name="title_activity_home_page">Home Page</string>
+
+
+    <string-array name="profession_array">
+        <item>PROFESSION</item>
+        <item>Accounting</item>
+        <item>Admin &amp; office support</item>
+        <item>Army?</item>
+        <item>Aged &amp; disability support</item>
+        <item>Architect</item>
+        <item>Athlete</item>
+        <item>Banker/teller</item>
+        <item>CEO &amp; Management</item>
+        <item>Call Centre and Customer Service</item>
+        <item>Chef/hospitality</item>
+        <item>Defence Force worker?</item>
+        <item>Design &amp; arts ????</item>
+        <item>Engineer</item>
+        <item>Farmer</item>
+        <item>Fundraiser</item>
+        <item>Graphics Designer</item>
+        <item>Healthcare Professional</item>
+        <item>Information &amp; communication technology</item>
+        <item>Insurance and superannuation</item>
+        <item>Manufacturing &amp; logistics</item>
+        <item>Marketing and communications</item>
+        <item>Mining</item>
+        <item>Paramedic</item>
+        <item>Police</item>
+        <item>Photographer</item>
+        <item>Professional Driver (Taxi/Uber driver)</item>
+        <item>Real estate</item>
+        <item>Retail worker</item>
+        <item>Sport and Recreation</item>
+        <item>Student</item>
+        <item>Teacher/Academic</item>
+        <item>Tourism</item>
+        <item>Trades/Construction worker</item>
+        <item>Volunteer Community Services</item>
+        <item>Unemployed?</item>
+    </string-array>
+
+    <string-array name="exerciseFreq_array">
+        <item>EXERCISE FREQUENCY</item>
+        <item>I do not exercise</item>
+        <item>1-2 times a week</item>
+        <item>3 times a week</item>
+        <item>4 times a week</item>
+        <item>5 times a week</item>
+        <item>6 times a week</item>
+        <item>7 or more times a week</item>
+    </string-array>
+
+    <string name="drawer_open">Open Menu</string>
+    <string name="drawer_close">Close Menu</string>
+    <string-array name="jobs">
+        <item>PROFESSION</item>
+        <item>Accounting</item>
+        <item>Admin &amp; office support</item>
+        <item>Aged &amp; disability support</item>
+        <item>Architecture</item>
+        <item>Athlete</item>
+        <item>Banker/Teller</item>
+        <item>CEO &amp; Management</item>
+        <item>Call Centre and Customer Service</item>
+        <item>Chef/hospitality</item>
+        <item>Engineer</item>
+        <item>Farmer</item>
+        <item>Flight Attendant</item>
+        <item>Fundraiser</item>
+        <item>Graphics Designer</item>
+        <item>Healthcare Professional</item>
+        <item>Information &amp; communication technology</item>
+        <item>Insurance and superannuation</item>
+        <item>Manufacturing &amp; logistics</item>
+        <item>Marketing and communications</item>
+        <item>Mining</item>
+        <item>Paramedic</item>
+        <item>Police</item>
+        <item>Photographer</item>
+        <item>Pilot</item>
+        <item>Professional Driver </item>
+        <item>Real estate</item>
+        <item>Retail worker</item>
+        <item>Sport and Recreation</item>
+        <item>Student</item>
+        <item>Teacher/Academic</item>
+        <item>Trades/Construction worker</item>
+        <item>Unemployed</item>
+    </string-array>
+
+    <string-array name="workoutStrings">
+        <item>EXERCISE FREQUENCY</item>
+        <item>I do not exercise</item>
+        <item>1-2 times a week</item>
+        <item>3 times a week</item>
+        <item>4 times a week</item>
+        <item>5 times a week</item>
+        <item>6 times a week</item>
+        <item>7 or more times a week</item>
+    </string-array>
+
+    <string-array name="workoutValues">
+        <item>-1</item>
+        <item>0</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+    <string name="title_activity_devices">Devices</string>
+
+    <string-array name="reports_array">
+        <item>Last Week</item>
+        <item>Last Month</item>
+        <item>Last 3 Months</item>
+    </string-array>
+
+    <string name="userConnectString">Users can share data with each other. A small validation procedure is required. To allow a user to view
+    your data, give them the code below, they will validate it, and give you code to enter. Once this is complete they can see your data.</string>
+
+    <string name="connectStep1">Step 1: Give a code to a user.</string>
+    <string name="connectStep1GetCode">Get Code</string>
+    <string name="connectStep2">Step 2: Verify a code to a user and give a code.</string>
+    <string name="connectStep2VerifyCode">Verify Code</string>
+    <string name="connectStep3">Step 3: Verify the Code given to you.</string>
+    <string name="connectStep3Verify">Enter Watchers Code</string>
+    <string name="connectActivateButton">Activate Sharing</string>
+    <string name="connectObserveeHint">Enter Observees Code</string>
+
+</resources>

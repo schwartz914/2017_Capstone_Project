@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <!-- HEADING -->
+    <TextView
+        android:id="@+id/textView"
+        style="@style/H1"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        android:paddingBottom="10dp"
+        android:text="SIGN UP"
+        android:drawableLeft="@drawable/signupplus" />
+
+    <!-- SIGN UP FORM -->
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="500dp"
+        android:orientation="vertical">
+
+        <!-- EMAIL -->
+        <EditText
+            android:id="@+id/et_emailSignUp"
+            style="@style/EditTextStyle"
+            android:layout_marginBottom="10dp"
+            android:drawableLeft="@drawable/email"
+            android:drawablePadding="20dip"
+            android:hint="EMAIL"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="5dp"
+            android:maxLines="1" />
+
+        <!-- FIRST NAME -->
+        <EditText
+            android:id="@+id/et_firstNameSignUp"
+            style="@style/EditTextStyle"
+            android:layout_marginBottom="10dp"
+            android:drawableLeft="@drawable/email"
+            android:drawablePadding="20dip"
+            android:hint="FIRST NAME"
+            android:inputType="textPersonName"
+            android:maxLines="1"
+            android:paddingLeft="5dp" />
+
+        <!-- LAST NAME -->
+        <EditText
+            android:id="@+id/et_lastNameSignUp"
+            style="@style/EditTextStyle"
+            android:layout_marginBottom="10dp"
+            android:drawableLeft="@drawable/email"
+            android:drawablePadding="20dip"
+            android:hint="LAST NAME"
+            android:inputType="textPersonName"
+            android:maxLines="1"
+            android:paddingLeft="5dp" />
+
+
+        <!-- PASSWORD -->
+        <EditText
+            android:id="@+id/et_passwordSignUp"
+            style="@style/EditTextStyle"
+            android:layout_marginBottom="10dp"
+            android:drawableLeft="@drawable/lock"
+            android:drawablePadding="20dip"
+            android:hint="PASSWORD"
+            android:inputType="textPassword"
+            android:paddingLeft="5dp"
+            android:maxLines="1" />
+
+        <!-- CONFIRM PASSWORD -->
+        <EditText
+            android:id="@+id/et_passwordConfirmSignUp"
+            style="@style/EditTextStyle"
+            android:layout_marginBottom="10dp"
+            android:drawableLeft="@drawable/lock"
+            android:drawablePadding="20dip"
+            android:hint="CONFIRM PASSWORD"
+            android:inputType="textPassword"
+            android:paddingLeft="5dp"
+            android:maxLines="1" />
+
+        <!-- TERMS AND CONDITIONS -->
+        <CheckBox
+            android:id="@+id/cb_termsAndConditions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I AGREE TO THE TERMS &amp; CONDITIONS" />
+        <!-- PRIVACY POLICY -->
+        <CheckBox
+            android:id="@+id/cb_privacyPolicy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I HAVE READ THE PRIVACY POLICY" />
+
+        <!-- Sign Up button -->
+        <Button
+            android:id="@+id/btn_signUp"
+            style="@style/ButtonStyle"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#545454"
+            android:text="CONTINUE" />
+    </LinearLayout>
+</LinearLayout>

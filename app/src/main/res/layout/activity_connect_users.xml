@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/appbg"
+    tools:context="smg.xelas.connect_users">
+
+    <ProgressBar
+        android:id="@+id/pb_loading_indicator"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:elevation="7dp"
+        android:visibility="invisible" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:elevation="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="40dp"
+                    android:textStyle="bold"
+                    android:text="Connect"
+                    android:textAlignment="center"
+                    android:background="@android:color/transparent" >
+                </TextView>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_userInstruction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="5dp"
+                android:text="@string/userConnectString"
+                android:textSize="15sp" />
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textview2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:paddingTop="2dp"
+                    android:text="@string/connectStep1"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tv_firstCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textAlignment="textStart"
+                    android:textSize="24sp"
+                    android:visibility="invisible" />
+
+                <Button
+                    android:id="@+id/getCode1Button"
+                    style="@style/ButtonStyle"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="5dp"
+                    android:backgroundTint="#545454"
+                    android:text="@string/connectStep1GetCode" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textview3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:paddingTop="2dp"
+                    android:text="@string/connectStep2"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/et_watcherEnteredCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/connectObserveeHint"
+                    android:textAlignment="textStart"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/tv_secondCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textAlignment="textStart"
+                    android:textSize="24sp"
+                    android:visibility="invisible" />
+
+                <Button
+                    android:id="@+id/getWatcherCodeButton"
+                    style="@style/ButtonStyle"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="20dp"
+                    android:backgroundTint="#545454"
+                    android:text="@string/connectStep2VerifyCode" />
+            </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textview4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="4dp"
+                        android:paddingRight="4dp"
+                        android:paddingTop="2dp"
+                        android:text="@string/connectStep3"
+                        android:textSize="20sp"
+                        android:visibility="visible" />
+
+                    <EditText
+                        android:id="@+id/et_finalCode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/connectStep3Verify"
+                        android:textAlignment="textStart"
+                        android:textSize="24sp" />
+
+                    <Button
+                        android:id="@+id/btn_activateSharing"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/ButtonStyle"
+                        android:layout_marginBottom="20dp"
+                        android:backgroundTint="@color/colorPrimaryDark"
+                        android:text="@string/connectActivateButton" />
+                </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

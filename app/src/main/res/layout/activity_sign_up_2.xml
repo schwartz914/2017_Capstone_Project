@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".sign_up_2">
+
+    <ProgressBar
+        android:id="@+id/pb_loading_indicator"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:elevation="7dp"
+        android:visibility="invisible" />
+
+    <!-- HEADING -->
+    <TextView
+        android:id="@+id/textView"
+        style="@style/H1"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        android:paddingBottom="10dp"
+        android:text="SIGN UP"
+        android:drawableLeft="@drawable/signupplus" />
+
+    <!-- SIGN UP FORM -->
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textView">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="300dp"
+            android:layout_height="500dp">
+
+        <!-- SUB TEXT -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="26sp"
+            android:text="You're almost done."
+            android:focusableInTouchMode="true"/>
+
+        <!-- D.O.B -->
+        <EditText
+            android:id="@+id/et_dobSignup"
+            style="@style/EditTextStyle"
+            android:layout_marginBottom="10dp"
+            android:drawableLeft="@drawable/user"
+            android:drawablePadding="20dip"
+            android:hint="D.O.B."
+            android:paddingLeft="5dp"
+            android:focusable="false"
+            android:editable="false"
+            android:maxLines="1"/>
+
+            <!-- GENDER -->
+            <Spinner
+                style="@style/SpinnerStyle"
+                android:id="@+id/sp_gender"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="58dp"
+                android:spinnerMode="dialog" />
+
+            <!-- HEIGHT -->
+            <EditText
+                android:id="@+id/et_height"
+                style="@style/EditTextStyle"
+                android:layout_marginBottom="10dp"
+                android:drawableLeft="@drawable/user"
+                android:drawablePadding="20dip"
+                android:hint="HEIGHT (cm)"
+                android:inputType="numberDecimal"
+                android:paddingLeft="5dp"
+                android:maxLines="1"/>
+
+            <!-- WEIGHT -->
+            <EditText
+                android:id="@+id/et_weight"
+                style="@style/EditTextStyle"
+                android:layout_marginBottom="10dp"
+                android:drawableLeft="@drawable/user"
+                android:drawablePadding="20dip"
+                android:hint="WEIGHT (kg)"
+                android:inputType="numberDecimal"
+                android:paddingLeft="5dp"
+                android:maxLines="1"/>
+
+            <!-- PROFESSION -->
+            <Spinner
+                style="@style/SpinnerStyle"
+                android:id="@+id/sp_profession"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="58dp"
+                android:spinnerMode="dialog" />
+
+            <!-- EXERCISE FREQUENCY -->
+            <Spinner
+                style="@style/SpinnerStyle"
+                android:id="@+id/sp_exerciseFreq"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="58dp"
+                android:spinnerMode="dialog" />
+
+            <!-- EXERCISE INTENSITY
+            <Spinner
+                style="@style/SpinnerStyle"
+                android:id="@+id/sp_exerciseIntensity"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="58dp"
+                android:spinnerMode="dialog" /> -->
+
+            <!-- DONE button -->
+            <Button
+                android:id="@+id/btn_done"
+                style="@style/ButtonStyle"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#545454"
+                android:text="Signup!!" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
